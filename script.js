@@ -123,19 +123,19 @@ myPromise.then(function (data) {
 
             //DATA FALLBACK
 
-            if (result[i].capital === null || result[i].capital === "") {
+            if (result[i].capital === null || result[i].capital === ""||result[i].capital.length===0) {
                 result[i].capital = 'NO CAPITAL'
             }
-            else if (result[i].currencies[0].code === null || result[i].currencies[0].code === "") {
+            else if (result[i].currencies[0].code === null || result[i].currencies[0].code === ""||result[i].currencies[0].code.length===0) {
                 result[i].currencies[0].code = 'NO CODE'
             }
-            else if (result[i].currencies[0].symbol === null || result[i].currencies[0].symbol === "") {
+            else if (result[i].currencies[0].symbol === null || result[i].currencies[0].symbol === ""||result[i].currencies[0].symbol.length===0) {
                 result[i].currencies[0].symbol = 'NO SYMBOL'
             }
-            else if (result[i].region === null || result[i].region === "") {
+            else if (result[i].region === null || result[i].region === ""||result[i].region.length===0) {
                 result[i].region = 'NO REGION'
             }
-            else if (result[i].latlng === null || result[i].latlng === "") {
+            else if (result[i].latlng === null || result[i].latlng === ""||result[i].latlng.length===0) {
                 result[i].latlng = 'NO DATA'
             }
 
